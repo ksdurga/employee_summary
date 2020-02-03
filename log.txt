@@ -12,3 +12,24 @@ Role: Intern
 Alma Mater: poopy
 --------------------
 
+Name: kevin
+ID: 1
+Email: kevin@spacemail.com
+Role: Manager
+Office Number: 12345
+----------------------------------------
+
+Name: lisa
+ID: 2
+Email: lisa@spacemail.com
+Role: Engineer
+Github Username: lisacodes
+----------------------------------------
+
+Name: greg
+ID: 3
+Email: greg@spacemail.com
+Role: Intern
+School: monsters university
+----------------------------------------
+
