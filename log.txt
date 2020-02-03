@@ -1,0 +1,14 @@
+Name: katie
+ID: 1
+Email: poop@gmail
+Role: Manager
+Office Number: 1
+--------------------
+
+Name: poo
+ID: 2
+Email: goo
+Role: Intern
+Alma Mater: poopy
+--------------------
+
