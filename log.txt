@@ -1,34 +1,20 @@
-Name: katie
+Name: dave
 ID: 1
-Email: poop@gmail
-Role: Manager
-Office Number: 1
---------------------
-
-Name: poo
-ID: 2
-Email: goo
-Role: Intern
-Alma Mater: poopy
---------------------
-
-Name: kevin
-ID: 1
-Email: kevin@spacemail.com
+Email: dave@mail.com
 Role: Manager
 Office Number: 12345
 ----------------------------------------
 
-Name: lisa
+Name: sally
 ID: 2
-Email: lisa@spacemail.com
+Email: sally@mail.com
 Role: Engineer
-Github Username: lisacodes
+Github Username: sallycodes
 ----------------------------------------
 
-Name: greg
+Name: bob
 ID: 3
-Email: greg@spacemail.com
+Email: bob@mail.com
 Role: Intern
 School: monsters university
 ----------------------------------------

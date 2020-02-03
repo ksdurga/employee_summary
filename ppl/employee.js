@@ -1,3 +1,4 @@
+//creates employee class
 class Employee {
   constructor(id, name, email) {
     this.id = id;

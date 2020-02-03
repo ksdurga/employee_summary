@@ -1,5 +1,6 @@
 const Employee = require("./employee.js");
 
+//extends employee class to add github username
 class Engineer extends Employee {
   constructor(id, name, email, github) {
     super(id, name, email);

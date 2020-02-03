@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const Employee = require("./ppl/employee");
+//references ppl objects
 const Manager = require("./ppl/manager");
 const Engineer = require("./ppl/engineer");
 const Intern = require("./ppl/intern");
@@ -9,22 +9,22 @@ const Intern = require("./ppl/intern");
 const managerQuestions = [
   {
     type: "input",
-    message: "What is the manager's ID number?",
+    message: "Enter manager's ID number",
     name: "id"
   },
   {
     type: "input",
-    message: "What is the manager's name?",
+    message: "Enter manager's name",
     name: "name"
   },
   {
     type: "input",
-    message: "What is the manager's email?",
+    message: "Enter manager's email",
     name: "email"
   },
   {
     type: "input",
-    message: "What is their office number?",
+    message: "Enter manager's office number",
     name: "officeNum"
   }
 ];
@@ -32,17 +32,17 @@ const managerQuestions = [
 const questions = [
   {
     type: "input",
-    message: "What is the employee's ID number?",
+    message: "Enter employee's ID number",
     name: "id"
   },
   {
     type: "input",
-    message: "What is the employee's name?",
+    message: "Enter Employee's name",
     name: "name"
   },
   {
     type: "input",
-    message: "What is the employee's email?",
+    message: "Enter employee's email",
     name: "email"
   },
   {
@@ -74,26 +74,6 @@ showQuestions = () => {
 };
 showQuestions();
 
-//Function to exit series of questions or add more employees
-completeQuestions = () => {
-  inquirer
-    .prompt({
-      type: "confirm",
-      message: "Do you want to add another employee?",
-      name: "confirmation"
-    })
-    .then(answers => {
-      if (answers.confirmation === false) {
-        return console.log(
-          "Completed creating team, see log.txt file."
-        );
-      } else {
-        console.log("Employee successfully added");
-        employeeQuestions();
-      }
-    });
-};
-
 employeeQuestions = () => {
   inquirer.prompt(questions).then(function(answers) {
     switch (answers.title) {
@@ -102,7 +82,7 @@ employeeQuestions = () => {
           .prompt([
             {
               type: "input",
-              message: "What is their Github user name?",
+              message: "Enter employee's GitHub username",
               name: "github"
             }
           ])
@@ -128,7 +108,7 @@ employeeQuestions = () => {
           .prompt([
             {
               type: "input",
-              message: "What school did they attend?",
+              message: "Enter school the employee attended",
               name: "school"
             }
           ])
@@ -153,6 +133,26 @@ employeeQuestions = () => {
         console.log("Please select an answer");
     }
   });
+};
+
+//Function to exit series of questions or add more employees
+completeQuestions = () => {
+  inquirer
+    .prompt({
+      type: "confirm",
+      message: "Do you want to add another employee?",
+      name: "confirmation"
+    })
+    .then(answers => {
+      if (answers.confirmation === false) {
+        return console.log(
+          "Team created, see log.txt file."
+        );
+      } else {
+        console.log("Employee successfully added");
+        employeeQuestions();
+      }
+    });
 };
 
 //Gets user input and returns it
